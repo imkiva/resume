@@ -1,0 +1,21 @@
+
+## LaTeX ##
+
+*.bbl
+*.blg
+*.log
+*.gz
+*.bak
+*.html
+*.aux
+*.ilg
+*.ind
+*.out
+.idea/
+
+## Emacs ##
+
+*~
+
+.DS_Store
+

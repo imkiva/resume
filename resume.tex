@@ -1,0 +1,107 @@
+% !TEX program = xelatex
+\documentclass{resume}
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{linespacing_fix}
+
+\begin{document}
+\renewcommand\headrulewidth{0pt}
+
+\name{Kiva Oyama}
+
+\basicInfo{
+  \email{imkiva@islovely.icu} \textperiodcentered\
+  \github[imkiva]{https://github.com/imkiva}
+}
+
+\section{Education}
+\datedsubsection{\textbf{Southwest Jiaotong University}, Chengdu, China}{2019/09 - present}
+  Major in Physics, GPA：3.72/4.00
+
+\section{Work Experience}
+
+\datedsubsection{\textbf{PLCT Lab}, Remote}{2020/11 - present}
+\role{intern}{PL Researcher}
+\datedsubsection{\textbf{The Aya Theorem Prover}}{\url{https://github.com/aya-prover/aya-dev}}
+A dependently-typed programming language and a proof assistant based on Cubical Type Theory.
+\begin{itemize}
+  \item Contributed to theory: implementation of de Morgan Cubical Type Theory.
+  \item Contributed to DX: inference of typechecking order, termination checker, generalized operator parser, library system, etc.
+  \item Contributed to tooling: language server, pretty-printing framework, IntelliJ and VSCode plugin.
+  % \item Contributed to runtime: JVM/GraalVM backend (planned).
+\end{itemize}
+
+\datedsubsection{\textbf{IntelliJ Plugin for Aya}}{\url{https://github.com/aya-prover/intellij-aya}}
+IntelliJ Platform plugin for the Aya language.
+\begin{itemize}
+  \item It integrates Aya LSP into the plugin: semantic highlighting, rename refactoring, search everywhere, etc.
+  \item Inspections and quick-fixes for common errors reported by Aya compiler.
+  \item Interactive debugger which traces the typechecking of Aya programs.
+  \item Proof search action in SearchEverywhere which finds a definition by its signature.
+\end{itemize}
+
+\section{Personal Projects}
+\datedsubsection{\textbf{Valheim Emulator}}{\url{https://github.com/imkiva/valheim}}
+A RISC-V 64 bit emulator which is capable of running modern Linux.
+\begin{itemize}
+  \item Type-safe instructions making decoding safe and correct.
+  \item Full emulation trace like persistent data structures for debugging real hardware or differential testing.
+  \item Used as the reference implementation when testing LLDB RISC-V Instruction Emulator.
+\end{itemize}
+
+\datedsubsection{\textbf{KiVM}}{\url{https://github.com/imkiva/KiVM}}
+A Java Virtual Machine designed for embedded platforms, following JVM specification version 8.
+\begin{itemize}
+  \item Support most of Java 8's new features, such as lambda expressions and streams.
+  \item Garbage Collector by applying mixed G1-Copying algorithm.
+  \item Standard JNI interfaces and bytecode control flow analysis.
+  \item Learned a lot about language runtimes.
+\end{itemize}
+
+% \datedsubsection{\textbf{fluorine}}{\url{https://github.com/imkiva/fluorine-rs}}
+% STLC with ADT, pattern matching and typeclass.
+% \begin{itemize}
+%   \item Trait-based (typeclass) operators overloading.
+%   \item Generic types with constraints solver.
+%   \item Easy-to-use ffi macros.
+%   \item Experimental JVM backend when no Rust ffi was used.
+% \end{itemize}
+
+\section{Skills}
+\begin{itemize}[parsep=0.25ex]
+  \item \textbf{Programming Languages}:
+    \textbf{multilingual} (not limited to any specific language),
+    and especially experienced in Java/Scala/Rust/Haskell,
+    comfortable with Kotlin/TypeScript/C++ (in random order).
+
+  % language Java
+  \item \textbf{Java/Scala/Kotlin}:
+    Know about their frontend: mostly the Java compiler. 
+    Know about their backend: HotSpot VM, GC algorithms and JIT compiler.
+    Implemented a self made JVM.
+  
+  % language Rust
+  \item \textbf{Rust}:
+    Familiar with Rust language features and implementations,
+    especially its LLVM backend.
+
+  % language PAs
+  \item \textbf{Proof assistants: Aya/Agda/Arend}:
+    Participated in the core developemnt of the Aya Prover.
+    Especially experienced in type-driven development.
+  
+  \item \textbf{Tooling}:
+    Comfortable with any OS/editors. Once contributed code to IntelliJ IDEA community version.
+    Especially experienced in Git and GitHub.
+\end{itemize}
+
+\section{Miscellaneous}
+\begin{itemize}[parsep=0.25ex]
+  \item Language: English - CET6, TOEFL-101, Chinese - native
+  \item Open Source Contribution: \url{https://github.com/imkiva}
+  \item \textbf{2 kyu} on \href{https://www.codewars.com/users/imkiva} {CodeWars}, primarily in Haskell
+  \item Prefer remote work. Programming for interest, powered by love.
+\end{itemize}
+
+\end{document}
