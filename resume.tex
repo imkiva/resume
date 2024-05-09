@@ -4,6 +4,7 @@
 \usepackage{lastpage}
 \usepackage{fancyhdr}
 \usepackage{linespacing_fix}
+\usepackage{scrextend}
 
 \begin{document}
 \renewcommand\headrulewidth{0pt}
@@ -16,30 +17,44 @@
 }
 
 \section{Education}
-\datedsubsection{\textbf{Southwest Jiaotong University}, Chengdu, China}{2019/09 - present}
+\datedsubsection{\textbf{Southwest Jiaotong University}, Chengdu, China}{2019/09 - 2023/06}
   Major in Physics, GPA：3.72/4.00
 
 \section{Work Experience}
 
-\datedsubsection{\textbf{PLCT Lab}, Remote}{2020/11 - present}
-\role{intern}{PL Researcher}
-\datedsubsection{\textbf{The Aya Theorem Prover}}{\url{https://github.com/aya-prover/aya-dev}}
-A dependently-typed programming language and a proof assistant based on Cubical Type Theory.
-\begin{itemize}
-  \item Contributed to theory: implementation of de Morgan Cubical Type Theory.
-  \item Contributed to DX: inference of typechecking order, termination checker, generalized operator parser, library system, etc.
-  \item Contributed to tooling: language server, pretty-printing framework, IntelliJ and VSCode plugin.
-  % \item Contributed to runtime: JVM/GraalVM backend (planned).
-\end{itemize}
+\datedsubsection{\textbf{PLCT Lab}, Remote}{2023/07 - present}
+\role{full-time}{Compiler Engineer}
+\begin{addmargin}[0.8em]{0em}
+  \datedsubsection{\textbf{LLVM Compiler Infrastructure}}{\url{https://github.com/ruyisdk/llvm-project}}
+  Implementing full-featured \textbf{vector extension} for T-Head RISC-V SoCs in the LLVM compiler.
+  \begin{itemize}
+    \item Lead to refactor the compiler architecture: coexistence with RISC-V standard vector extension.
+    \item Lead to implement the compilation-optimization flow of T-Head vector intrinsic functions.
+    \item Contributed to vector-related passes: auto-insertion of vector length registers, vector length deduction, etc.
+  \end{itemize}
+\end{addmargin}
 
-\datedsubsection{\textbf{IntelliJ Plugin for Aya}}{\url{https://github.com/aya-prover/intellij-aya}}
-IntelliJ Platform plugin for the Aya language.
-\begin{itemize}
-  \item It integrates Aya LSP into the plugin: semantic highlighting, rename refactoring, search everywhere, etc.
-  \item Inspections and quick-fixes for common errors reported by Aya compiler.
-  \item Interactive debugger which traces the typechecking of Aya programs.
-  \item Proof search action in SearchEverywhere which finds a definition by its signature.
-\end{itemize}
+\datedsubsection{\textbf{PLCT Lab}, Remote}{2020/11 - 2023/07}
+\role{intern}{PL Researcher}
+\begin{addmargin}[0.8em]{0em}
+  \datedsubsection{\textbf{The Aya Theorem Prover}}{\url{https://github.com/aya-prover/aya-dev}}
+  A dependently-typed programming language and a proof assistant based on Cubical Type Theory.
+  \begin{itemize}
+    \item Contributed to theory: implementation of de Morgan Cubical Type Theory.
+    \item Contributed to DX: inference of typechecking order, termination checker, generalized operator parser, library system, etc.
+    \item Contributed to tooling: language server, pretty-printing framework, IntelliJ and VSCode plugin.
+    % \item Contributed to runtime: JVM/GraalVM backend (planned).
+  \end{itemize}
+\end{addmargin}
+
+% \datedsubsection{\textbf{IntelliJ Plugin for Aya}}{\url{https://github.com/aya-prover/intellij-aya}}
+% IntelliJ Platform plugin for the Aya language.
+% \begin{itemize}
+%   \item It integrates Aya LSP into the plugin: semantic highlighting, rename refactoring, search everywhere, etc.
+%   \item Inspections and quick-fixes for common errors reported by Aya compiler.
+%   \item Interactive debugger which traces the typechecking of Aya programs.
+%   \item Proof search action in SearchEverywhere which finds a definition by its signature.
+% \end{itemize}
 
 \section{Personal Projects}
 \datedsubsection{\textbf{Valheim Emulator}}{\url{https://github.com/imkiva/valheim}}
